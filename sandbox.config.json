@@ -1,0 +1,10 @@
+{
+	"infiniteLoopProtection": true,
+	"hardReloadOnChange": true,
+	"view": "browser",
+	"container": {
+		"port": 3003,
+		// Codesandbox doesn't support > 14
+		"node": "14"
+	}
+}

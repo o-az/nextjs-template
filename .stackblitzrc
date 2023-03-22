@@ -1,0 +1,9 @@
+{
+  "$schema": "https://gist.githubusercontent.com/o-az/5ce7231e41a3169a633d775b494eed0c/raw/a86c7cce0f5da526fa0c4302b805de353f0b52f7/stackblitzrc-schema.json",
+  "installDependencies": true,
+  "startCommand": "yarn dev",
+  "env": {
+    "NODE_ENV": "development",
+    "NEXT_TELEMETRY_DISABLED": 1
+  }
+}

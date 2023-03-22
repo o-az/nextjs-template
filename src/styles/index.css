@@ -1,0 +1,14 @@
+#root,
+#__next,
+html,
+body {
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+	/* flex-direction: row; */
+}
