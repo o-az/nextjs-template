@@ -51,6 +51,8 @@ module.exports = {
 		'no-multiple-empty-lines': ['off'],
 		'no-unexpected-multiline': ['off'],
 		'@typescript-eslint/no-var-requires': ['off'],
+		'@typescript-eslint/prefer-namespace-keyword': ['off'],
+		'@typescript-eslint/no-empty-interface': ['off'],
 		'@typescript-eslint/consistent-type-imports': [
 			'warn',
 			{
@@ -59,12 +61,6 @@ module.exports = {
 			},
 		],
 		'@typescript-eslint/ban-ts-comment': ['off'],
-		'@typescript-eslint/no-empty-interface': [
-			'error',
-			{
-				allowSingleExtends: false,
-			},
-		],
 		'@typescript-eslint/ban-types': [
 			'warn',
 			{
