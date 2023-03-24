@@ -5,18 +5,18 @@
 		"dev": "next --port 3003",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint --fix",
+		"lint": "next lint -- --fix",
 		"format": "prettier --write . --ignore-path='.gitignore'",
 		"typecheck": "tsc --noEmit",
 		"analyze": "ANALYZE=true yarn build",
-		"clean": "rm -rf .next .cache .eslintcache node_modules",
+		"clean": "rm -rf .next .cache node_modules",
 		"post-update": "yarn upgrade --latest"
 	},
 	"dependencies": {
 		"next": "13.2.4",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"swr": "^2.1.1"
+		"zustand": "^4.3.6"
 	},
 	"devDependencies": {
 		"@next/bundle-analyzer": "^13.2.4",
@@ -42,6 +42,7 @@
 		"postcss": "8.4.21",
 		"prettier": "^2.8.2",
 		"prettier-plugin-tailwindcss": "^0.2.1",
+		"simple-zustand-devtools": "^1.1.0",
 		"tailwindcss": "3.2.7",
 		"typescript": "^5.0.2",
 		"webpack": "^5.76.3"

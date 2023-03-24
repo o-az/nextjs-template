@@ -11,19 +11,12 @@ module.exports = {
 				default: ['var(--font-inter)', 'system-ui', 'sans-serif'],
 			},
 			animation: {
-				// Tooltip
-				'slide-up-fade': 'slide-up-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-				'slide-down-fade': 'slide-down-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
+				'spin-slow': 'spin 2s linear infinite',
 			},
 			keyframes: {
-				// Tooltip
-				'slide-up-fade': {
-					'0%': { opacity: 0, transform: 'translateY(6px)' },
-					'100%': { opacity: 1, transform: 'translateY(0)' },
-				},
-				'slide-down-fade': {
-					'0%': { opacity: 0, transform: 'translateY(-6px)' },
-					'100%': { opacity: 1, transform: 'translateY(0)' },
+				wiggle: {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' },
 				},
 			},
 		},
