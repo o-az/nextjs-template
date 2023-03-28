@@ -6,6 +6,8 @@
 
 #### TailwindCSS
 
+#### Vitest
+
 #### ESLint
 
 #### Prettier

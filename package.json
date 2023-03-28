@@ -8,6 +8,7 @@
     "lint": "eslint --fix . --ext='js,cjs,mjs,jsx,ts,tsx' --ignore-path='.gitignore' --cache",
     "format": "prettier --write . --ignore-path='.gitignore'",
     "typecheck": "tsc --noEmit",
+    "test": "vitest",
     "analyze": "ANALYZE=true next build",
     "clean": "rm -rf .next .cache out node_modules",
     "post-update": "yarn upgrade --latest"
@@ -23,12 +24,15 @@
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
+    "@testing-library/react": "^14.0.0",
     "@types/eslint": "^8.21.3",
     "@types/node": "18.15.10",
     "@types/prettier": "^2.7.2",
     "@types/react": "18.0.30",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
     "@typescript-eslint/parser": "^5.57.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "@vitest/ui": "^0.29.7",
     "autoprefixer": "10.4.14",
     "clsx": "^1.2.1",
     "eslint": "8.36.0",
@@ -39,12 +43,24 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unicorn": "^46.0.0",
+    "jsdom": "^21.1.1",
     "postcss": "8.4.21",
     "prettier": "^2.8.2",
     "prettier-plugin-tailwindcss": "^0.2.1",
     "tailwindcss": "3.2.7",
     "typescript": "^5.0.2",
+    "vitest": "^0.29.7",
     "webpack": "^5.76.3"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "zustand",
+    "vitest",
+    "eslint",
+    "prettier"
+  ]
 }

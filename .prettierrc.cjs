@@ -1,6 +1,5 @@
 /** @type {import('prettier').Config} */
 module.exports = {
-  useTabs: false,
   semi: false,
   printWidth: 120,
   endOfLine: 'auto',
