@@ -1,5 +1,9 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+import forms from '@tailwindcss/forms'
+import plugin from 'tailwindcss/plugin'
+import typography from '@tailwindcss/typography'
+
+export default {
   content: ['./src/**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}'],
   future: {
     hoverOnlyWhenSupported: true,
@@ -22,12 +26,11 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
-    require('tailwindcss/plugin')(({ addVariant }) => {
+    forms,
+    typography,
+    plugin(({ addVariant }) => {
       addVariant('radix-side-top', '&[data-side="top"]')
       addVariant('radix-side-bottom', '&[data-side="bottom"]')
     }),
   ],
-}
+} satisfies Config

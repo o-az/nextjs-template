@@ -1,0 +1,44 @@
+name: 'CI'
+
+defaults:
+  run:
+    shell: bash
+
+on:
+  push:
+    branches: [main]
+
+env:
+  CI: true
+  ACTIONS_RUNNER_DEBUG: true
+
+jobs:
+  ci:
+    name: 'Format, Lint, Test, Build'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v3
+
+      - name: 'Setup Bun'
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: 'latest'
+
+      - name: 'Install Dependencies'
+        run: bun install
+
+      - name: 'Lint'
+        run: bun run lint
+
+      - name: 'Format'
+        run: bun run format
+
+      - name: 'Typecheck'
+        run: bun run typecheck
+
+      - name: 'Build'
+        run: bun run build
+
+      - name: 'Test'
+        run: bun run test
