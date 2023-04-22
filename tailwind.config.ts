@@ -4,7 +4,7 @@ import plugin from 'tailwindcss/plugin'
 import typography from '@tailwindcss/typography'
 
 export default {
-  content: ['./src/**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}'],
+  content: ['./src/**/*.{js,jsx,tsx,mdx,html}'],
   future: {
     hoverOnlyWhenSupported: true,
   },
