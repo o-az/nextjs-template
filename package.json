@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "next --port 3003",
+    "prebuild": "yarn lint && yarn format && yarn typecheck",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --fix . --ext='js,cjs,mjs,jsx,ts,cts,mts,tsx,mdx' --ignore-path='.gitignore' --cache",
@@ -54,7 +55,7 @@
     "webpack": "^5.80.0"
   },
   "simple-git-hooks": {
-    "pre-commit": "yarn && yarn lint && yarn format && yarn typecheck && yarn test --run && yarn build"
+    "pre-commit": "yarn && yarn lint && yarn format && yarn typecheck && yarn test --run && yarn next build"
   },
   "license": "MIT",
   "keywords": [

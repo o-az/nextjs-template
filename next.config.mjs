@@ -15,6 +15,8 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
+  // we run using `prebuild` script
+  eslint: { ignoreDuringBuilds: true },
   experimental: {
     scrollRestoration: true,
   },
