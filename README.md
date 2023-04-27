@@ -18,7 +18,7 @@ degit github:o-az/nextjs-template
 
 ### [`TypeScript`](https://www.typescriptlang.org) (Type Safety)
 
-### [`Zustand`](https://github.com/pmndrs/zustand) (state management)
+### [`Zustand`](https://github.com/pmndrs/zustand) (State Management)
 
 ### [`TailwindCSS`](https://tailwindcss.com) (CSS Utility Library)
 
