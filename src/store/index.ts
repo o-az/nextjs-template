@@ -20,7 +20,8 @@ export const useBearStore = create<BearState & BearActions>()(
       ...initialBearState,
       getBears: () => get().bears,
       increaseBears: by => set(state => ({ bears: state.bears + (by ? Number(by) : 1) })),
-      decreaseBears: by => set(state => ({ bears: state.bears === 0 ? 0 : state.bears - (by ? Number(by) : 1) })),
+      decreaseBears: by =>
+        set(state => ({ bears: state.bears === 0 ? 0 : state.bears - (by ? Number(by) : 1) })),
       annahilateBears: () => set({ bears: 0 }),
     }),
     {

@@ -1,8 +1,5 @@
 {
   "files.associations": {
-    // tells vscode that the file can take comments
-    "sandbox.config.json": "jsonc",
-    ".stackblitzrc": "jsonc",
     "settings.json": "jsonc"
   },
   "git.enableCommitSigning": true,
@@ -10,18 +7,23 @@
   "git.confirmSync": false,
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.preferences.quoteStyle": "single",
-  "typescript.preferences.importModuleSpecifier": "relative",
-  "javascript.preferences.quoteStyle": "single",
-  "javascript.preferences.importModuleSpecifier": "relative",
-  "npm.packageManager": "yarn",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "npm.packageManager": "pnpm",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "eslint.enable": true,
   "eslint.format.enable": true,
-  "eslint.packageManager": "yarn",
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "mdx", "toml"],
+  "eslint.packageManager": "pnpm",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "mdx",
+    "toml"
+  ],
   "eslint.options": {
     "extensions": [".js", ".cjs", ".mjs", ".ts", ".cts", ".mts", ".jsx", ".tsx", ".mdx"]
   },

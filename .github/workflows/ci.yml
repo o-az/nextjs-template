@@ -20,25 +20,31 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v3
 
-      - name: 'Setup Bun'
-        uses: oven-sh/setup-bun@v1
+      - name: 'Setup pnpm'
+        uses: pnpm/action-setup@v2.2.4
         with:
-          bun-version: 'latest'
+          version: 'latest'
+
+      - name: 'Setup Node.js'
+        uses: actions/setup-node@v3
+        with:
+          node-version: 'lts/*'
+          cache: 'pnpm'
 
       - name: 'Install Dependencies'
-        run: bun install
+        run: pnpm install
 
       - name: 'Lint'
-        run: bun run lint
+        run: pnpm lint
 
       - name: 'Format'
-        run: bun run format
+        run: pnpm format
 
       - name: 'Typecheck'
-        run: bun run typecheck
+        run: pnpm typecheck
 
       - name: 'Build'
-        run: bun run build
+        run: pnpm build
 
       - name: 'Test'
-        run: bun run test
+        run: pnpm test
